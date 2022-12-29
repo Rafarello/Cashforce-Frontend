@@ -32,8 +32,8 @@ import HandShakeSvg from "../components/icons/HandShakeSvg.vue";
             <td>SACADO 001</td>
             <td>CEDENTE 002</td>
             <td>12/02/2020</td>
-            <td>R$ 49.725,00</td>
-            <td>Recebido</td>
+            <td className="featured-value">R$ 49.725,00</td>
+            <td className="featured-value">Recebido</td>
             <td>
               <span>Dados do cedente</span>
             </td>
@@ -142,5 +142,10 @@ tbody > tr > td {
   /* N. Dark / 3 */
 
   color: #4d5566;
+}
+
+tbody > tr td.featured-value {
+  font-weight: 500;
+  color: #00ad8c;
 }
 </style>
