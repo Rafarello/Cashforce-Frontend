@@ -13,6 +13,19 @@ import HandShakeSvg from "../components/icons/HandShakeSvg.vue";
         <span>Visualize as notas fiscais que você tem.</span>
       </div>
     </div>
+    <div className="table-orders-container">
+      <table>
+        <tr className="table-header-row">
+          <th>nota fiscal</th>
+          <th>sacado</th>
+          <th>cedente</th>
+          <th>emissão</th>
+          <th>valor</th>
+          <th>status</th>
+          <th></th>
+        </tr>
+      </table>
+    </div>
   </section>
 </template>
 
@@ -51,5 +64,34 @@ import HandShakeSvg from "../components/icons/HandShakeSvg.vue";
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.table-orders-container {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+tr.table-header-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 30px;
+}
+
+tr.table-header-row > th {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #a1a8b8;
 }
 </style>
