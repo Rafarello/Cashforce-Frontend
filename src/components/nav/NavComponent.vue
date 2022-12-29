@@ -1,6 +1,12 @@
-<script setup></script>
+<script setup>
+import CashForceIconSvg from "../icons/CashForceIconSvg.vue";
+</script>
 
-<template></template>
+<template>
+  <nav>
+    <CashForceIconSvg />
+  </nav>
+</template>
 
 <style scoped>
 nav {
