@@ -26,6 +26,19 @@ import HandShakeSvg from "../components/icons/HandShakeSvg.vue";
             <th></th>
           </tr>
         </thead>
+        <tbody>
+          <tr className="table-data-row">
+            <td>1234</td>
+            <td>SACADO 001</td>
+            <td>CEDENTE 002</td>
+            <td>12/02/2020</td>
+            <td>R$ 49.725,00</td>
+            <td>Recebido</td>
+            <td>
+              <span>Dados do cedente</span>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </section>
