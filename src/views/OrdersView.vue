@@ -100,6 +100,7 @@ tr.table-header-row {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding-left: 30px;
   margin-bottom: 19px;
+  padding-right: 15px;
 }
 
 tr.table-header-row > th {
@@ -127,5 +128,19 @@ tr.table-data-row {
   background: #ffffff;
   border: 1px solid #dfe2eb;
   border-radius: 6px;
+}
+
+tbody > tr > td {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  /* N. Dark / 3 */
+
+  color: #4d5566;
 }
 </style>
