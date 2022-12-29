@@ -116,4 +116,16 @@ tr.table-header-row > th {
 
   color: #a1a8b8;
 }
+
+tr.table-data-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  background: #ffffff;
+  border: 1px solid #dfe2eb;
+  border-radius: 6px;
+}
 </style>
