@@ -15,14 +15,16 @@ import HandShakeSvg from "../components/icons/HandShakeSvg.vue";
     </div>
     <div className="table-orders-container">
       <table>
-        <thead className="table-header-row">
-          <th>nota fiscal</th>
-          <th>sacado</th>
-          <th>cedente</th>
-          <th>emissão</th>
-          <th>valor</th>
-          <th>status</th>
-          <th></th>
+        <thead>
+          <tr className="table-header-row">
+            <th>nota fiscal</th>
+            <th>sacado</th>
+            <th>cedente</th>
+            <th>emissão</th>
+            <th>valor</th>
+            <th>status</th>
+            <th></th>
+          </tr>
         </thead>
       </table>
     </div>
@@ -74,13 +76,20 @@ table {
   width: 100%;
 }
 
-thead.table-header-row {
+tbody {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+tr.table-header-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding-left: 30px;
+  margin-bottom: 19px;
 }
 
-thead.table-header-row > th {
+tr.table-header-row > th {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
