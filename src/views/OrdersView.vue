@@ -1,5 +1,6 @@
 <script setup>
 import HandShakeSvg from "../components/icons/HandShakeSvg.vue";
+import tableStatusCode from "../utils/enums/tableStatusCode";
 </script>
 
 <script>
@@ -25,6 +26,9 @@ export default {
         style: "currency",
         currency: "BRL",
       });
+    },
+    renderTableStatus: (item) => {
+      return tableStatusCode[item];
     },
   },
 };
@@ -67,7 +71,9 @@ export default {
             <td className="featured-value">
               {{ formatMoneyValue(item.value) }}
             </td>
-            <td className="featured-value bold">Recebido</td>
+            <td className="featured-value bold">
+              {{ renderTableStatus(item?.orderStatusBuyer) }}
+            </td>
             <td className="show-buyer-data-btn">
               <span className="bold">Dados do cedente</span>
             </td>
