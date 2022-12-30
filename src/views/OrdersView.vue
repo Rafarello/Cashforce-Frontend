@@ -16,6 +16,17 @@ export default {
     });
     this.orders = response;
   },
+  methods: {
+    formatDateValue: (item) => {
+      return new Date(item).toLocaleDateString();
+    },
+    formatMoneyValue: (item) => {
+      return Number(item).toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL",
+      });
+    },
+  },
 };
 </script>
 
@@ -52,8 +63,10 @@ export default {
             <td>{{ item?.nNf }}</td>
             <td>{{ item?.buyer?.name }}</td>
             <td>{{ item?.provider?.name }}</td>
-            <td>{{ new Date(item.emissionDate).toLocaleDateString() }}</td>
-            <td className="featured-value">R$ {{ item.value }}</td>
+            <td>{{ formatDateValue(item.emissionDate) }}</td>
+            <td className="featured-value">
+              {{ formatMoneyValue(item.value) }}
+            </td>
             <td className="featured-value bold">Recebido</td>
             <td className="show-buyer-data-btn">
               <span className="bold">Dados do cedente</span>
