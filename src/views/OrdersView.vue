@@ -2,6 +2,23 @@
 import HandShakeSvg from "../components/icons/HandShakeSvg.vue";
 </script>
 
+<script>
+import api from "../plugins/axios";
+export default {
+  data() {
+    return {
+      orders: [],
+    };
+  },
+  async created() {
+    const response = await api.get("/orders").then((resp) => {
+      return resp.data;
+    });
+    this.orders = response;
+  },
+};
+</script>
+
 <template>
   <section className="orders-content">
     <div className="title-subtitle-wrapper">
@@ -27,15 +44,19 @@ import HandShakeSvg from "../components/icons/HandShakeSvg.vue";
           </tr>
         </thead>
         <tbody>
-          <tr className="table-data-row">
-            <td>1234</td>
-            <td>SACADO 001</td>
-            <td>CEDENTE 002</td>
-            <td>12/02/2020</td>
-            <td className="featured-value">R$ 49.725,00</td>
-            <td className="featured-value">Recebido</td>
-            <td>
-              <span>Dados do cedente</span>
+          <tr
+            v-for="item in orders"
+            v-bind:key="item.id"
+            className="table-data-row"
+          >
+            <td>{{ item?.nNf }}</td>
+            <td>{{ item?.buyer?.name }}</td>
+            <td>{{ item?.provider?.name }}</td>
+            <td>{{ new Date(item.emissionDate).toLocaleDateString() }}</td>
+            <td className="featured-value">R$ {{ item.value }}</td>
+            <td className="featured-value bold">Recebido</td>
+            <td className="show-buyer-data-btn">
+              <span className="bold">Dados do cedente</span>
             </td>
           </tr>
         </tbody>
@@ -121,11 +142,11 @@ tr.table-header-row > th {
 tr.table-data-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
   padding-left: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   padding-right: 15px;
   background: #ffffff;
+  height: 48px;
   border: 1px solid #dfe2eb;
   border-radius: 6px;
 }
@@ -144,8 +165,27 @@ tbody > tr > td {
   color: #4d5566;
 }
 
-tbody > tr td.featured-value {
+.featured-value {
   font-weight: 500;
   color: #00ad8c;
+}
+
+.show-buyer-data-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 32px;
+
+  /* P. Blue / 2 */
+
+  border: 1px solid #cad3ff;
+  border-radius: 24px;
+  color: #727d94;
+}
+
+.bold {
+  font-weight: 700;
 }
 </style>
