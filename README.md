@@ -57,7 +57,7 @@ Para renderização dos valores das colunas da tabela corretamente foram necess�
 
 ## Variáveis de Ambiente
 
-Para esse projeto foi encontrada muita dificuldade em configurar as `Variáveis de Ambiente`, portanto foi configurado manualmente na `Url Base` do **Axios** as Variáveis **Host** e **Port**, por isso para a aplicação executar corretamente é necessário editar esse documento caso o Host seja diferente de  *localhost* e porta *3001* 
+Para esse projeto foi encontrada muita dificuldade em configurar as `Variáveis de Ambiente`, portanto foi configurado manualmente na `Url Base` do **Axios** as Variáveis **Host** e **Port**, portanto para a aplicação executar corretamente é necessário editar esse documento caso o Host seja diferente de  *localhost* e porta *3001* previamente configuradas no Backend
 
 
 ## Dificuldades
