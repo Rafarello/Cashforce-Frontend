@@ -64,7 +64,7 @@ Para esse projeto foi encontrada muita dificuldade em configurar as `Variáveis 
 
 Além da dificuldade configurando as variáveis de ambiente, como já comentado no tópico anterior, foram encontrado dificuldades em entender inicialmente o método de renderização do Vue e as estruturas dos Componentes, visto que é relativamente bem diferente a lógica de construção se comparado com React, que é o Framework no Frontend que tive mais contato até o momento.
 
-Foram consumidas algumas boas horas lendo documentação e tutoriais de apenas como os arquivos eram estruturados, como por exemplo que o `script`, a página `html` e a `estilização` eram feitas na mesma página.
+Foram consumidos alguns bons minutos lendo documentação e tutoriais de apenas como os arquivos eram estruturados, como por exemplo que o `script`, a página `html` e a `estilização` eram feitas na mesma página.
 
 Também foi encontrado dificuldade em tratar da requisição de buscar as informações ao renderizar a página e sua assincronicidade
 
