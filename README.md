@@ -9,7 +9,7 @@ Projeto construído em Vue.js para um teste técnico de uma aplicação Fullstac
 - [@RafaelMoraes](https://www.github.com/rafarello)
 
 
-## Documentação
+## Inicialização
 
 Para iniciar o projeto basta seguir os passos a seguir:
 
@@ -17,7 +17,7 @@ Para iniciar o projeto basta seguir os passos a seguir:
 - Executar o comando `npm install` para instalar as dependências
 - Executar o comando `npm start` para iniciar a aplicação
 
-## Teste
+## Sobre
 
 O Teste contempla uma tela de pedidos, onde esta é alimentada pela API criada no Backend.
 
