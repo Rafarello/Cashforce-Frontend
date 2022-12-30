@@ -67,9 +67,9 @@ export default {
             <td>{{ item?.nNf }}</td>
             <td>{{ item?.buyer?.name }}</td>
             <td>{{ item?.provider?.name }}</td>
-            <td>{{ formatDateValue(item.emissionDate) }}</td>
+            <td>{{ formatDateValue(item?.emissionDate) }}</td>
             <td className="featured-value">
-              {{ formatMoneyValue(item.value) }}
+              {{ formatMoneyValue(item?.value) }}
             </td>
             <td className="featured-value bold">
               {{ renderTableStatus(item?.orderStatusBuyer) }}
@@ -137,7 +137,8 @@ tbody {
 
 tr.table-header-row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1.4fr 165px;
+  column-gap: 15px;
   padding-left: 30px;
   margin-bottom: 19px;
   padding-right: 15px;
@@ -160,7 +161,8 @@ tr.table-header-row > th {
 
 tr.table-data-row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1.4fr 165px;
+  column-gap: 15px;
   align-items: center;
   padding-left: 30px;
   padding-right: 15px;
