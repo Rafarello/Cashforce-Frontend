@@ -44,8 +44,6 @@ Esta possuí as colunas:
 - Valor da Transação
 - Status (Status da Transação)
 
-Para cada item da tabela, existe um botão que não foi implementado nenhuma funcionalidade, mas que seria responsável por mostrar informações do Cedente (`Provedor`)
-
 ## Funções de Formatação - Tabela
 
 Para renderização dos valores das colunas da tabela corretamente foram necessárias a criação de alguns métodos, entre eles estão:
