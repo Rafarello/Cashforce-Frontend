@@ -82,5 +82,5 @@ Mas resumindo os pontos que tive maior aprendizado foram:
 
 ## Screenshots
 
-[Cashforce App](https://prnt.sc/F9fcc7WCvrXK)
+<img src="src/images/Screenshot_Cashforce_App.png" align="center" />
 
