@@ -13,7 +13,8 @@
 }
 
 @font-face {
-  font-family: 'DM sans Bold';
+  font-family: 'DM sans';
+  font-weight: 700;
   src: url('./fonts/DMSans-Bold.ttf') format('truetype');
 }
 
@@ -28,7 +29,8 @@
 }
 
 @font-face {
-  font-family: 'DM sans Bold Medium';
+  font-family: 'DM sans';
+  font-weight: 500;
   src: url('./fonts/DMSans-Medium.ttf') format('truetype');
 }
 
